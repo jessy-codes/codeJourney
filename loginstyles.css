@@ -1,0 +1,122 @@
+#head {
+    background-color:black ;
+    color: chartreuse;
+    padding: 40px;
+    text-align: center;
+
+}
+body{
+    background-color: lavender;
+
+}
+header {
+    background-color: #8a00e6;
+    color: burlywood;
+    padding: 20px 20px 40px 40px;
+    text-align: start;
+    font-style: oblique;
+}
+
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.8s;
+}
+.sidenav a{
+    padding: 10px 10px 10px 40px;
+    text-decoration: none ;
+    font-size: 30px;
+    color: cornflowerblue;
+    display: block;
+    transition: 0.5s;
+}
+/*change color when mouse hovers over link*/
+.sidenav a:hover{
+    color: darkcyan;
+}
+/*positioning and styling my close button*/
+.sidenav .closeBtn{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    font-size: 30px;
+    margin-left: 40px;
+}
+@media screen and (max-height:400px){
+    .sidenav{padding-top: 10px;}
+    .sidenav a{font-size: 15px;}
+}
+
+.grid-container{
+    display: grid;
+  grid-template-areas: 'header header header header header'
+    'JOIN US JOIN US JOIN US LOGIN LOGIN'
+     'JOIN US JOIN US JOIN US LOGIN LOGIN' 
+     'footer footer footer footer footer' ;
+     grid-gap: 0px 0px;
+     background-color: violet;
+     padding: 20px;
+     align-content: center;
+     height: 1000px;
+
+    
+}
+.grid-container > div{
+    background-color: ash;
+    padding: 30px 0;
+    font-size: auto;
+}
+.grid-item1 {
+    grid-area: header;
+   grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.grid-item2 {
+    grid-area: JOIN US;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.grid-item3 {
+    grid-area: LOGIN;
+   grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+   grid-row-end: 4;
+}   
+.grid-item4 {
+    grid-area: footer;
+   grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+ .myForm{
+     border-width:50px;
+     padding: 20px 20px 20px 20px;
+     background-color: #32cd32;
+ }
+ footer{
+     background-color: black;
+     font-style: oblique;
+     color: whitesmoke;
+ }
+ #login{
+     background-color: #cc33ff;
+    /* font-size: medium;*/
+     font-style: normal;
+   /*  align-content: center;*/
+ }
+
+ 
+/**/
